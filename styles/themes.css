@@ -52,6 +52,7 @@
 	}
 }
 
+
 /* Светлая тема */
 :root.theme-light {
 	--font-weight-card-title: bold;
