@@ -12,3 +12,27 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes conus {
+	to {
+		left: -16px;
+	}
+}
+
+@keyframes increase {
+	from {
+		scale: 1;
+	}
+	to {
+		scale: 1.5;
+	}
+}
+
+@keyframes appearance {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

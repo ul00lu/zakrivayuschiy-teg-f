@@ -4,3 +4,99 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+/* Темная тема */
+:root.theme-dark {
+	--font-weight-card-title: 785;
+	--font-weight-card-text: 465;
+
+	--main-color: #00cc14;
+	--background-color: #000;
+
+	--background-image: repeating-linear-gradient(
+			to right,
+			#000 0 2px,
+			transparent 2px 4px
+		),
+		repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+		linear-gradient(to bottom, #007f0c 0.01%, #004306);
+
+	--background-color-alt: #00cc14;
+
+	--button-color: #00cc14;
+
+	--contur-color: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--font-weight-card-title: 785;
+		--font-weight-card-text: 465;
+
+		--main-color: #00cc14;
+		--background-color: #000;
+
+		--background-image: repeating-linear-gradient(
+				to right,
+				#000 0 2px,
+				transparent 2px 4px
+			),
+			repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+			linear-gradient(to bottom, #007f0c 0.01%, #004306);
+
+		--background-color-alt: #00cc14;
+
+		--button-color: #00cc14;
+
+		--contur-color: #00cc14;
+	}
+}
+
+/* Светлая тема */
+:root.theme-light {
+	--font-weight-card-title: bold;
+	--font-weight-card-text: normal;
+
+	--main-color: #000;
+	--background-color: #fff;
+
+	--background-image: repeating-linear-gradient(
+			to right,
+			#d3d3d3 0 2px,
+			transparent 2px 4px
+		),
+		repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+		linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+	--border: 2px solid var(--main-color);
+	--background-color-alt: #fff;
+	--button-color: #fff;
+	--contur-color: #000;
+
+	--sparks-color: #ff0000;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--font-weight-card-title: bold;
+		--font-weight-card-text: normal;
+
+		--main-color: #000;
+		--background-color: #fff;
+
+		--background-image: repeating-linear-gradient(
+				to right,
+				#d3d3d3 0 2px,
+				transparent 2px 4px
+			),
+			repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+			linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+		--border: 2px solid var(--main-color);
+		--background-color-alt: #fff;
+		--button-color: #fff;
+		--contur-color: #000;
+
+		--sparks-color: #ff0000;
+	}
+}
