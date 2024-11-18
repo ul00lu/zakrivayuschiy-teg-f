@@ -279,9 +279,6 @@
 @media (width <= 420px) {
 	.feedback {
 		flex-direction: column;
-	}
-
-	.feedback {
 		max-inline-size: 306px;
 		min-block-size: 84px;
 	}
