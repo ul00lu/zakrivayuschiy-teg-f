@@ -2,8 +2,8 @@
 :root {
 	--font-base: 'Inter-Variable';
 	--font-accent: 'PressStart2P';
-	--font-weight-card-title: bold;
-	--font-weight-card-text: normal;
+	--font-weight-card-title: 700;
+	--font-weight-card-text: 400;
 
 	--main-color: #000;
 	--background-color: #fff;

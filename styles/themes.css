@@ -52,11 +52,10 @@
 	}
 }
 
-
 /* Светлая тема */
 :root.theme-light {
-	--font-weight-card-title: bold;
-	--font-weight-card-text: normal;
+	--font-weight-card-title: 700;
+	--font-weight-card-text: 400;
 
 	--main-color: #000;
 	--background-color: #fff;
@@ -79,8 +78,8 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--font-weight-card-title: bold;
-		--font-weight-card-text: normal;
+		--font-weight-card-title: 700;
+		--font-weight-card-text: 400;
 
 		--main-color: #000;
 		--background-color: #fff;
