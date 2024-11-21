@@ -168,7 +168,7 @@
 }
 
 .like-icon.is-liked .sparks {
-	animation: fadeIn 0.3s ease-in 0.3s alternate;
+	animation: fadeIn 0.3s ease-in 0.3s alternate 1;
 }
 
 .like-icon:not(.is-liked) .contour {

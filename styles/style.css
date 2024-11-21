@@ -166,38 +166,38 @@
 	vertical-align: middle;
 }
 
-.card__image--contrast {
+.filter-contrast {
 	filter: contrast(150%);
 }
 
-.card__image--blur {
+.filter-blur {
 	filter: blur(1px);
 }
 
-.card__image--saturate {
+.filter-saturate {
 	filter: saturate(2);
 }
 
-.card__image--hue-rotate {
+.filter-hue-rotate {
 	filter: hue-rotate(-90deg);
 }
 
-.card__image--invert {
+.filter-invert {
 	filter: invert(0.7);
 }
 
-.card__image--grayscale {
+.filter-grayscale {
 	filter: grayscale(0.2);
 }
 
-.card__image--multi {
+.filter-sepia-contrast-brightness {
 	filter: sepia(1) contrast(1) brightness(110%);
 }
 
 .card__label {
 	position: absolute;
 	top: 24px;
-	right: 24px;
+	right: 3%;
 	opacity: 0.5;
 	color: var(--main-color, #000);
 	font-family: var(--font-accent), sans-serif;
@@ -237,6 +237,8 @@
 	display: flex;
 	justify-content: center;
 	align-self: center;
+	outline: 2px solid transparent;
+	transition: outline 0.2s linear;
 }
 
 .card__interaction {
@@ -300,6 +302,10 @@
 	.feedback__icon {
 		--size: 28px;
 	}
+
+	.feedback__icon--window {
+		--size: 39px;
+	}
 }
 
 /* Modal window */
@@ -336,9 +342,9 @@
 .window__title {
 	font-family: var(--font-accent), sans-serif;
 	color: var(--main-color, #000);
+	font-weight: var(--font-weight-card-text);
 	font-size: 14px;
 	line-height: 150%;
-	letter-spacing: 2px;
 }
 
 .window__close {
@@ -346,5 +352,11 @@
 	position: relative;
 	width: 100%;
 	padding-block: 12.5px;
-	padding-inline: 132px;
+	padding-inline: 129px;
+}
+
+@media (width <= 420px) {
+	.window__close {
+		padding-inline: 112px;
+	}
 }

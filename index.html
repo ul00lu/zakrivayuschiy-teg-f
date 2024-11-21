@@ -56,7 +56,7 @@
 						<img
 							src="./images/card/card1.jpg"
 							alt="Голубое небо с белыми облаками и солнцем"
-							class="card__image card__image--contrast"
+							class="card__image filter-contrast"
 						/>
 						<span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
 					</div>
@@ -117,7 +117,7 @@
 						<img
 							src="./images/card/card2.jpg"
 							alt="Дольки арбуза на розовом фоне в стиле пиксель-арт"
-							class="card__image card__image--blur"
+							class="card__image filter-blur"
 							loading="lazy"
 						/>
 						<span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
@@ -182,7 +182,7 @@
 						<img
 							src="./images/card/card3.jpg"
 							alt="Кубики льда и розовые бриллианты на желтом фоне в стиле пиксель-арт"
-							class="card__image card__image--saturate"
+							class="card__image filter-saturate"
 							loading="lazy"
 						/>
 						<span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
@@ -244,7 +244,7 @@
 						<img
 							src="./images/card/card4.jpg"
 							alt="Связки бананов на розовом фоне в стиле пиксель-арт"
-							class="card__image card__image--hue-rotate"
+							class="card__image filter-hue-rotate"
 							loading="lazy"
 						/>
 						<span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
@@ -308,10 +308,10 @@
 						<img
 							src="./images/card/card5.jpg"
 							alt="Ананасы на розовом фоне в стиле пиксель-арт"
-							class="card__image card__image--invert"
+							class="card__image filter-invert"
 							loading="lazy"
 						/>
-						<span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
+						<span class="card__label" aria-hidden="true">care</span>
 					</div>
 					<div class="card__body">
 						<div class="card__text">
@@ -373,7 +373,7 @@
 						<img
 							src="./images/card/card6.jpg"
 							alt="Клубника и зеленые листья на желтом фоне в стиле пиксель-арт"
-							class="card__image card__image--grayscale"
+							class="card__image filter-grayscale"
 							loading="lazy"
 						/>
 						<span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
@@ -435,7 +435,7 @@
 						<img
 							src="./images/card/card7.jpg"
 							alt="Рыжий кот в солнцезащитных очках на фоне неба с облаками"
-							class="card__image card__image--multi"
+							class="card__image filter-sepia-contrast-brightness"
 							loading="lazy"
 						/>
 						<span class="card__label" aria-hidden="true">&lt;CHIVAVA&gt;</span>
@@ -558,19 +558,19 @@
 						</div>
 					</div>
 				</article>
-			</section>
-			<section class="feedback feedback__container container">
-				<button
-					class="feedback__button button-animation button"
-					type="button"
-					onclick="window['dialog'].showModal();"
-					aria-controls="dialog"
-				>
-					<svg class="feedback__icon">
-						<use href="./images/footer/floppy.svg#floppy"></use>
-					</svg>
-					<span class="feedback__text button__text">Сохранить на память</span>
-				</button>
+				<div class="feedback feedback__container container">
+					<button
+						class="feedback__button button-animation button"
+						type="button"
+						onclick="window['dialog'].showModal();"
+						aria-controls="dialog"
+					>
+						<svg class="feedback__icon">
+							<use href="./images/footer/floppy.svg#floppy"></use>
+						</svg>
+						<span class="feedback__text button__text">Сохранить на память</span>
+					</button>
+				</div>
 			</section>
 		</main>
 
